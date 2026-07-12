@@ -1,0 +1,81 @@
+
+Data: 05/07/2026
+Milestone: Primo controllo di un LED tramite GPIO della ESP32-C3
+Obiettivo
+
+Realizzare il primo circuito elettronico comandato dalla ESP32-C3, comprendendo il funzionamento delle uscite digitali (GPIO) e verificando la corretta esecuzione di un semplice firmware di controllo.
+
+Componenti utilizzati
+ESP32-C3 SuperMini
+LED rosso da 5 mm
+Resistenza da circa 68 Ω (marrone - blu - nero - oro)
+Breadboard
+Cavetti Dupont
+Collegamenti elettrici
+Componente	Collegamento
+GPIO 0 ESP32	Resistenza
+Resistenza	Anodo (gambo lungo) del LED
+Catodo (gambo corto) del LED	GND ESP32
+
+Il LED è stato collegato in serie ad una resistenza limitatrice per evitare il danneggiamento del componente.
+
+Firmware sviluppato
+
+È stato realizzato il primo programma di controllo della ESP32-C3 utilizzando le funzioni fondamentali dell'ambiente Arduino:
+
+pinMode()
+digitalWrite()
+delay()
+
+Il firmware esegue ciclicamente le seguenti operazioni:
+
+imposta il GPIO come uscita;
+porta il GPIO a livello logico alto (HIGH) accendendo il LED;
+mantiene il LED acceso per un intervallo di tempo;
+porta il GPIO a livello logico basso (LOW) spegnendo il LED;
+ripete continuamente la sequenza.
+Attività svolte
+Identificazione del corretto orientamento del LED:
+gambo lungo → anodo (+)
+gambo corto → catodo (-)
+Comprensione della funzione della resistenza limitatrice.
+Realizzazione del circuito sulla breadboard.
+Caricamento del firmware sulla ESP32-C3.
+Verifica del corretto lampeggio del LED.
+Modifica del tempo di lampeggio variando il parametro della funzione delay() per comprenderne il funzionamento.
+Problemi riscontrati
+
+Durante il montaggio iniziale sono stati necessari alcuni controlli per verificare:
+
+il corretto orientamento del LED;
+la posizione della resistenza sulla breadboard;
+la continuità dei collegamenti.
+
+Dopo la verifica il circuito ha funzionato regolarmente.
+
+Risultati ottenuti
+Primo circuito elettronico funzionante realizzato con la ESP32-C3.
+Verifica del corretto funzionamento dei GPIO.
+Comprensione della differenza tra livello logico HIGH e LOW.
+Primo controllo di un componente esterno mediante software.
+Competenze acquisite
+
+Durante questa attività sono stati appresi i seguenti concetti:
+
+funzionamento di una breadboard;
+utilizzo delle uscite digitali della ESP32;
+polarità dei LED;
+funzione della resistenza limitatrice;
+utilizzo delle funzioni pinMode(), digitalWrite() e delay();
+relazione tra firmware ed effetto fisico sul circuito elettronico.
+Stato del progetto
+
+✅ ESP32-C3 configurata
+
+✅ Primo firmware eseguito
+
+✅ Primo circuito elettronico realizzato
+
+✅ Controllo di un LED tramite GPIO
+
+➡️ Prossima attività: integrazione del display LCD1602 con interfaccia I²C.
