@@ -1,0 +1,27 @@
+# Elden Ring
+
+## V0.1 - The First Grace
+
+Data:
+27/06/2026
+
+Obiettivo:
+Programmare ESP32.
+
+Risultato:
+Firmware caricato.
+
+Problemi:
+
+- Porta COM non trovata
+- Cavo USB solo alimentazione
+- USB CDC disabilitato
+
+Soluzione:
+
+- Cambiato cavo
+- Attivato USB CDC On Boot
+
+Esito:
+
+SUCCESS
