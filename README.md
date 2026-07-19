@@ -26,7 +26,7 @@ Development of a smart ring based on the ESP32-C3 microcontroller.
 - [x] GPIO and external LED tested
 - [x] I2C bus tested
 - [x] LCD1602 operational
-- [ ] MAX30102 acquisition
+- [x] MAX30102 acquisition
 - [ ] Bluetooth Low Energy
 - [ ] Mobile application
 - [ ] Battery management
